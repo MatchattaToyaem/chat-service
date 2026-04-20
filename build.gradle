@@ -42,7 +42,7 @@ ext {
 }
 
 dependencies {
-    implementation 'edu.oconnor:shared-security:1.0.6'
+    implementation 'edu.oconnor:shared-security:1.0.7'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-security'
