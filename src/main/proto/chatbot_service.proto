@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package chatbotservice;
+
+// --- Add these two lines ---
+option java_package = "edu.oconnor.chatservice.grpc"; // Change to your actual base package
+option java_multiple_files = true;
+// ---------------------------
+
+// Define the service and its RPC methods
+service HuggingFaceService {
+  rpc GenerateResponse (PromptRequest) returns (InferenceReply) {}
+}
+
+// Define the request payload
+message PromptRequest {
+  string prompt = 1;
+}
+
+// Define the response payload
+message InferenceReply {
+  string result = 1;
+}
