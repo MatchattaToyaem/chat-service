@@ -34,7 +34,7 @@ properties:
         identity: System
     ingress:
       external: true
-      targetPort: 8082
+      targetPort: 8080
       transport: http
       allowInsecure: false
   template:
