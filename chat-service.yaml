@@ -29,6 +29,9 @@ properties:
       - name: chatbot-server-api
         keyVaultUrl: https://PLACEHOLDER_VAULT.vault.azure.net/secrets/chatbot-server-api
         identity: System
+      - name: jwt-issuer-uri
+        keyVaultUrl: https://PLACEHOLDER_VAULT.vault.azure.net/secrets/jwt-issuer-uri
+        identity: System
     ingress:
       external: true
       targetPort: 8082
@@ -52,6 +55,8 @@ properties:
             secretRef: db-password
           - name: JWT_SECRET
             secretRef: jwt-secret
+          - name: JWT_ISSUER_URI
+            secretRef: jwt-issuer-uri
           - name: CHATBOT_SERVER_ADDRESS
             secretRef: chatbot-server-api
     scale:
