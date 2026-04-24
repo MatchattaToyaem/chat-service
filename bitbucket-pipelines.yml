@@ -32,12 +32,13 @@ definitions:
           - sed -i "s/PLACEHOLDER_ACR/$ACR_PASSWORD/g" chat-service.yaml
           - sed -i "s/PLACEHOLDER_VAULT/$AZURE_KEY_VAULT_NAME/g" chat-service.yaml
 
+          - sed -i "s|oconnoraiplatform.azurecr.io/chat-service:latest|oconnoraiplatform.azurecr.io/chat-service:$BITBUCKET_COMMIT|g" chat-service.yaml
           - |
             if az containerapp show --name chat-service --resource-group ai-platform 2>/dev/null; then
               az containerapp update \
                 --name chat-service \
                 --resource-group ai-platform \
-                --image oconnoraiplatform.azurecr.io/chat-service:$BITBUCKET_COMMIT
+                --yaml chat-service.yaml
             else
               az containerapp create \
                 --name chat-service \
