@@ -1,8 +1,10 @@
 package edu.oconnor.chatservice.controller;
 
+import edu.oconnor.chatservice.grpc.InferenceReply;
 import edu.oconnor.chatservice.model.ChatHistoryEntry;
 import edu.oconnor.chatservice.model.MessageRequest;
 import edu.oconnor.chatservice.model.MessageResponse;
+import edu.oconnor.chatservice.model.SourceDto;
 import edu.oconnor.chatservice.service.ChatSessionService;
 import edu.oconnor.chatservice.service.ChatbotIntegrationService;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -12,6 +14,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 
 import java.time.OffsetDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -27,16 +30,28 @@ public class ChatController {
 
     @MessageMapping("/chat")
     @PreAuthorize("isAuthenticated()")
-    @SendToUser("/queue/message")   // sends only to the requesting user's private queue
+    @SendToUser("/queue/message")
     public MessageResponse sendMessage(@Payload MessageRequest messageRequest) {
         long start = System.currentTimeMillis();
-        String answer = chatbotService.askChatbot(messageRequest.getMessage());
+        InferenceReply reply = chatbotService.askChatbot(messageRequest.getMessage());
         long responseTimeMs = System.currentTimeMillis() - start;
+
+        List<SourceDto> sources = reply.getSourcesList().stream().map(s -> {
+            SourceDto dto = new SourceDto();
+            dto.setFile(s.getFile());
+            dto.setSubfolder(s.getSubfolder());
+            dto.setScore(s.getScore());
+            dto.setChunkId(s.getChunkId());
+            return dto;
+        }).toList();
 
         if (messageRequest.getSessionId() != null && !messageRequest.getSessionId().isBlank()) {
             ChatHistoryEntry entry = new ChatHistoryEntry();
             entry.setQuestion(messageRequest.getMessage());
-            entry.setAnswer(answer);
+            entry.setAnswer(reply.getResult());
+            entry.setConfidence(reply.getConfidence());
+            entry.setModel(reply.getModel());
+            entry.setSources(sources);
             entry.setDocumentReferenceId("");
             entry.setResponseTime(responseTimeMs + "ms");
             entry.setResponseDate(OffsetDateTime.now().toString());
@@ -44,8 +59,11 @@ public class ChatController {
         }
 
         MessageResponse response = new MessageResponse();
-        response.setSender("Mistral");
-        response.setMessage(answer);
+        response.setSender(reply.getModel().isBlank() ? "AI" : reply.getModel());
+        response.setMessage(reply.getResult());
+        response.setConfidence(reply.getConfidence());
+        response.setModel(reply.getModel());
+        response.setSources(sources);
         return response;
     }
 }
