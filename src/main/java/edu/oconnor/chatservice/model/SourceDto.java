@@ -13,4 +13,7 @@ public class SourceDto {
 
     @JsonProperty("chunk_id")
     private String chunkId;
+
+    @JsonProperty("document_path")
+    private String documentPath;
 }

@@ -7,6 +7,7 @@ import edu.oconnor.chatservice.model.MessageResponse;
 import edu.oconnor.chatservice.model.SourceDto;
 import edu.oconnor.chatservice.service.ChatSessionService;
 import edu.oconnor.chatservice.service.ChatbotIntegrationService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.simp.annotation.SendToUser;
@@ -22,6 +23,9 @@ public class ChatController {
 
     private final ChatbotIntegrationService chatbotService;
     private final ChatSessionService chatSessionService;
+
+    @Value("${sharepoint.base-folder:IMS}")
+    private String sharepointBaseFolder;
 
     public ChatController(ChatbotIntegrationService chatbotService, ChatSessionService chatSessionService) {
         this.chatbotService = chatbotService;
@@ -42,6 +46,7 @@ public class ChatController {
             dto.setSubfolder(s.getSubfolder());
             dto.setScore(s.getScore());
             dto.setChunkId(s.getChunkId());
+            dto.setDocumentPath(sharepointBaseFolder + "/" + s.getFile());
             return dto;
         }).toList();
 
