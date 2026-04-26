@@ -52,7 +52,6 @@ public class ChatController {
             entry.setConfidence(reply.getConfidence());
             entry.setModel(reply.getModel());
             entry.setSources(sources);
-            entry.setDocumentReferenceId("");
             entry.setResponseTime(responseTimeMs + "ms");
             entry.setResponseDate(OffsetDateTime.now().toString());
             chatSessionService.appendChatHistory(UUID.fromString(messageRequest.getSessionId()), entry);

@@ -16,9 +16,6 @@ public class ChatHistoryEntry {
     private String model;
     private List<SourceDto> sources;
 
-    @JsonProperty("document_reference_id")
-    private String documentReferenceId;
-
     @JsonProperty("response_time")
     private String responseTime;
 
