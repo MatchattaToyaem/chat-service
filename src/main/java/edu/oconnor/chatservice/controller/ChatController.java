@@ -52,6 +52,7 @@ public class ChatController {
 
         if (messageRequest.getSessionId() != null && !messageRequest.getSessionId().isBlank()) {
             ChatHistoryEntry entry = new ChatHistoryEntry();
+            entry.setAnswerId(UUID.randomUUID().toString());
             entry.setQuestion(messageRequest.getMessage());
             entry.setAnswer(reply.getResult());
             entry.setConfidence(reply.getConfidence());

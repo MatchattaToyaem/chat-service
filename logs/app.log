@@ -1,68 +1,312 @@
-2026-04-21 00:02:05.673 [MessageBroker-3] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 2 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(2)-CONNECTED(2)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 18], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4], sockJsScheduler[pool size = 5, active threads = 1, queued tasks = 0, completed tasks = 4]
-2026-04-21 00:28:35.435 [http-nio-8082-exec-4] INFO  [b0a3085254bd] e.o.s.filter.RequestLoggingFilter - [b0a3085254bd] OPTIONS /api/chat-sessions/user/matchatta.toyaem1%40outlook.com | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 1ms
-2026-04-21 00:28:35.438 [http-nio-8082-exec-3] INFO  [64cd6541654a] e.o.s.filter.RequestLoggingFilter - [64cd6541654a] GET /ws | status=101 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 4ms
-2026-04-21 00:28:35.464 [http-nio-8082-exec-6] INFO  [3b5ecd4ee3f5] e.o.s.filter.RequestLoggingFilter - [3b5ecd4ee3f5] GET /api/chat-sessions/user/matchatta.toyaem1%40outlook.com | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 24ms
-2026-04-21 00:28:39.550 [http-nio-8082-exec-10] INFO  [284a0205f8a8] e.o.s.filter.RequestLoggingFilter - [284a0205f8a8] GET /ws | status=101 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 1ms
-2026-04-21 00:28:39.555 [http-nio-8082-exec-7] INFO  [5d5fe38ea53f] e.o.s.filter.RequestLoggingFilter - [5d5fe38ea53f] GET /api/chat-sessions/user/matchatta.toyaem1%40outlook.com | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 7ms
-2026-04-21 00:28:58.866 [http-nio-8082-exec-3] INFO  [516e44b485f5] e.o.s.filter.RequestLoggingFilter - [516e44b485f5] OPTIONS /api/chat-sessions/user/matchatta.toyaem1%40outlook.com | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 2ms
-2026-04-21 00:28:58.868 [http-nio-8082-exec-5] INFO  [d4e894a832d4] e.o.s.filter.RequestLoggingFilter - [d4e894a832d4] GET /ws | status=101 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 4ms
-2026-04-21 00:28:58.881 [http-nio-8082-exec-8] INFO  [d47fd69ec161] e.o.s.filter.RequestLoggingFilter - [d47fd69ec161] GET /api/chat-sessions/user/matchatta.toyaem1%40outlook.com | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 12ms
-2026-04-21 00:32:05.778 [MessageBroker-2] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(1)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 48], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 11], sockJsScheduler[pool size = 6, active threads = 1, queued tasks = 0, completed tasks = 5]
-2026-04-21 01:02:05.781 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(1)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 48], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 11], sockJsScheduler[pool size = 7, active threads = 1, queued tasks = 0, completed tasks = 6]
-2026-04-21 01:12:40.447 [http-nio-8082-exec-2] INFO  [631d0ec3ec0d] e.o.s.filter.RequestLoggingFilter - [631d0ec3ec0d] GET /ws | status=101 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 7ms
-2026-04-21 01:46:16.804 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m27s977ms).
-2026-04-21 01:47:14.499 [MessageBroker-1] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 7]
-2026-04-21 01:51:20.835 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m4s10ms).
-2026-04-21 02:07:20.852 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m30s9ms).
-2026-04-21 02:24:11.765 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m50s914ms).
-2026-04-21 02:40:58.677 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m16s896ms).
-2026-04-21 03:09:23.283 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s416ms).
-2026-04-21 03:28:00.962 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s627ms).
-2026-04-21 03:48:31.107 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m77ms).
-2026-04-21 04:06:08.983 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m7s874ms).
-2026-04-21 04:23:43.822 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m34s840ms).
-2026-04-21 04:41:03.469 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m49s654ms).
-2026-04-21 04:57:15.456 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m41s971ms).
-2026-04-21 04:59:12.729 [MessageBroker-5] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 9, active threads = 1, queued tasks = 0, completed tasks = 8]
-2026-04-21 05:26:37.176 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m21s524ms).
-2026-04-21 05:45:04.247 [MessageBroker-3] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 10, active threads = 1, queued tasks = 0, completed tasks = 9]
-2026-04-21 06:15:04.248 [MessageBroker-6] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 11, active threads = 1, queued tasks = 0, completed tasks = 10]
-2026-04-21 06:44:00.817 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m22s837ms).
-2026-04-21 07:02:09.460 [MessageBroker-2] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 12, active threads = 1, queued tasks = 0, completed tasks = 11]
-2026-04-21 07:32:09.464 [MessageBroker-7] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 13, active threads = 1, queued tasks = 0, completed tasks = 12]
-2026-04-21 08:00:49.669 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m5s723ms).
-2026-04-21 08:09:45.221 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m25s541ms).
-2026-04-21 08:25:45.185 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s950ms).
-2026-04-21 08:39:40.671 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 13]
-2026-04-21 09:09:40.654 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 14]
-2026-04-21 09:32:27.791 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m11s928ms).
-2026-04-21 10:19:21.357 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m53s567ms).
-2026-04-21 10:21:16.761 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m55s404ms).
-2026-04-21 10:44:11.376 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m54s613ms).
-2026-04-21 11:05:55.743 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s130ms).
-2026-04-21 11:06:50.183 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 15]
-2026-04-21 11:36:50.194 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 16]
-2026-04-21 12:33:46.169 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m50s3ms).
-2026-04-21 12:35:10.190 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 17]
-2026-04-21 13:05:10.186 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 18]
-2026-04-21 13:35:10.210 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 19]
-2026-04-21 14:05:10.189 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 20]
-2026-04-21 14:36:03.806 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m16s987ms).
-2026-04-21 15:18:32.658 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m28s854ms).
-2026-04-21 15:45:12.639 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m39s980ms).
-2026-04-21 15:59:06.098 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 21]
-2026-04-21 17:15:28.655 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11m15s759ms).
-2026-04-21 18:00:16.505 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m47s853ms).
-2026-04-21 18:21:25.255 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m8s752ms).
-2026-04-21 19:38:59.624 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m34s368ms).
-2026-04-21 20:01:52.807 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 22]
-2026-04-21 20:31:52.797 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 23]
-2026-04-21 21:01:52.895 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 24]
-2026-04-21 21:31:52.955 [MessageBroker-4] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 6 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(6)-CONNECTED(6)-DISCONNECT(3)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 66], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 16], sockJsScheduler[pool size = 14, active threads = 1, queued tasks = 0, completed tasks = 25]
-2026-04-21 21:44:29.724 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-21 21:44:29.735 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-04-21 21:44:29.743 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
-2026-04-21 21:44:29.743 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1a390b8c]]
-2026-04-21 21:44:29.743 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
-2026-04-21 21:44:29.754 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-04-21 21:44:29.758 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-06 15:00:51.336 [main] INFO  [] e.o.c.ChatServiceApplication - Starting ChatServiceApplication using Java 21.0.7 with PID 95583 (/Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service/build/classes/java/main started by matchattatoyaem in /Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service)
+2026-05-06 15:00:51.337 [main] INFO  [] e.o.c.ChatServiceApplication - The following 1 profile is active: "local"
+2026-05-06 15:00:51.757 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-06 15:00:51.762 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:00:51.762 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-06 15:00:51.762 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-05-06 15:00:51.781 [main] INFO  [] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 427 ms
+2026-05-06 15:00:51.826 [main] INFO  [] n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2026-05-06 15:00:52.985 [main] INFO  [] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-06 15:00:53.086 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-05-06 15:00:53.086 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3f033664]]
+2026-05-06 15:00:53.086 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-05-06 15:00:53.086 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:00:53.090 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-06 15:00:53.092 [main] INFO  [] e.o.c.ChatServiceApplication - Started ChatServiceApplication in 1.933 seconds (process running for 2.233)
+2026-05-06 15:01:21.897 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06 15:01:21.897 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-06 15:01:21.899 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-05-06 15:01:21.903 [http-nio-8082-exec-1] WARN  [e1be078f2be6] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/chat-sessions/%7BsessionId%7D/answer-rating' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-06 15:01:21.915 [http-nio-8082-exec-1] WARN  [e1be078f2be6] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: {sessionId}]
+2026-05-06 15:01:21.916 [http-nio-8082-exec-1] INFO  [e1be078f2be6] e.o.s.filter.RequestLoggingFilter - [e1be078f2be6] PUT /api/chat-sessions/%7BsessionId%7D/answer-rating | status=400 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 17ms
+2026-05-06 15:01:53.111 [MessageBroker-1] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-06 15:02:01.189 [http-nio-8082-exec-4] INFO  [72f81151b4f5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-06 15:02:01.266 [http-nio-8082-exec-4] INFO  [72f81151b4f5] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c9075c5
+2026-05-06 15:02:01.267 [http-nio-8082-exec-4] INFO  [72f81151b4f5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-06 15:02:01.283 [http-nio-8082-exec-4] INFO  [72f81151b4f5] e.o.s.filter.RequestLoggingFilter - [72f81151b4f5] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 143ms
+2026-05-06 15:02:43.833 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06 15:02:43.838 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-06 15:02:43.839 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-05-06 15:02:43.839 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3f033664]]
+2026-05-06 15:02:43.839 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-05-06 15:02:43.841 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-06 15:02:43.842 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-06 15:02:45.723 [main] INFO  [] e.o.c.ChatServiceApplication - Starting ChatServiceApplication using Java 21.0.7 with PID 847 (/Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service/build/classes/java/main started by matchattatoyaem in /Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service)
+2026-05-06 15:02:45.724 [main] INFO  [] e.o.c.ChatServiceApplication - The following 1 profile is active: "local"
+2026-05-06 15:02:46.129 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-06 15:02:46.133 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:02:46.133 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-06 15:02:46.133 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-05-06 15:02:46.147 [main] INFO  [] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 407 ms
+2026-05-06 15:02:46.195 [main] INFO  [] n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2026-05-06 15:02:47.060 [main] INFO  [] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-06 15:02:47.154 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-05-06 15:02:47.154 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@19213a74]]
+2026-05-06 15:02:47.154 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-05-06 15:02:47.155 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:02:47.158 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-06 15:02:47.161 [main] INFO  [] e.o.c.ChatServiceApplication - Started ChatServiceApplication in 1.59 seconds (process running for 1.803)
+2026-05-06 15:03:36.543 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06 15:03:36.547 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-06 15:03:36.549 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-05-06 15:03:36.549 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@19213a74]]
+2026-05-06 15:03:36.549 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-05-06 15:03:38.283 [main] INFO  [] e.o.c.ChatServiceApplication - Starting ChatServiceApplication using Java 21.0.7 with PID 3160 (/Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service/build/classes/java/main started by matchattatoyaem in /Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service)
+2026-05-06 15:03:38.284 [main] INFO  [] e.o.c.ChatServiceApplication - The following 1 profile is active: "local"
+2026-05-06 15:03:38.688 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-06 15:03:38.692 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:03:38.697 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-06 15:03:38.697 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-05-06 15:03:38.711 [main] INFO  [] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 407 ms
+2026-05-06 15:03:38.753 [main] INFO  [] n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2026-05-06 15:03:39.668 [main] INFO  [] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-06 15:03:39.761 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-05-06 15:03:39.762 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4c9ef9c9]]
+2026-05-06 15:03:39.762 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-05-06 15:03:39.762 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:03:39.765 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-06 15:03:39.768 [main] INFO  [] e.o.c.ChatServiceApplication - Started ChatServiceApplication in 1.645 seconds (process running for 1.862)
+2026-05-06 15:04:09.564 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06 15:04:09.565 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-06 15:04:09.566 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-06 15:04:09.572 [http-nio-8082-exec-1] WARN  [9991670a1af3] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-06 15:04:09.626 [http-nio-8082-exec-1] INFO  [9991670a1af3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-06 15:04:09.691 [http-nio-8082-exec-1] INFO  [9991670a1af3] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@764a46ff
+2026-05-06 15:04:09.691 [http-nio-8082-exec-1] INFO  [9991670a1af3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-06 15:04:09.706 [http-nio-8082-exec-1] INFO  [9991670a1af3] e.o.c.service.ChatSessionService - Rate chat answer: [{"answer":"A bird is a type of animal that belongs to the class Aves. Birds have several distinguishing features. They have feathers, which help them fly, insulate their bodies, and regulate their body temperature. Birds also have beaks instead of teeth, and their skeletons are lightweight and highly adaptable. Birds are found all over the world, and they come in a wide variety of sizes, shapes, and colors. Some birds are solitary and live in isolated areas, while others live in large flocks and can be found in a wide range of habitats, including forests, grasslands, deserts, wetlands, and coastal areas. Birds play an important role in many ecosystems, and they are an important source of food for many people around the world.","question":"what is bird","response_date":"2026-04-20T19:30:26.587504+09:30","response_time":"6834ms","document_reference_id":""}]
+2026-05-06 15:04:09.716 [http-nio-8082-exec-1] INFO  [9991670a1af3] e.o.s.filter.RequestLoggingFilter - [9991670a1af3] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 148ms
+2026-05-06 15:04:39.766 [MessageBroker-1] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-06 15:08:48.199 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06 15:08:48.203 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-06 15:08:48.204 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-05-06 15:08:48.204 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4c9ef9c9]]
+2026-05-06 15:08:48.204 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-05-06 15:08:48.206 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-06 15:08:48.208 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-06 15:08:49.727 [main] INFO  [] e.o.c.ChatServiceApplication - Starting ChatServiceApplication using Java 21.0.7 with PID 16392 (/Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service/build/classes/java/main started by matchattatoyaem in /Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service)
+2026-05-06 15:08:49.728 [main] INFO  [] e.o.c.ChatServiceApplication - The following 1 profile is active: "local"
+2026-05-06 15:08:50.110 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-06 15:08:50.114 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:08:50.115 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-06 15:08:50.115 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-05-06 15:08:50.129 [main] INFO  [] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 385 ms
+2026-05-06 15:08:50.174 [main] INFO  [] n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2026-05-06 15:08:51.058 [main] INFO  [] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-06 15:08:51.151 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-05-06 15:08:51.151 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5fd4e67f]]
+2026-05-06 15:08:51.152 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-05-06 15:08:51.152 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:08:51.155 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-06 15:08:51.158 [main] INFO  [] e.o.c.ChatServiceApplication - Started ChatServiceApplication in 1.577 seconds (process running for 1.791)
+2026-05-06 15:08:53.552 [http-nio-8082-exec-2] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06 15:08:53.552 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-06 15:08:53.553 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-06 15:08:53.559 [http-nio-8082-exec-2] WARN  [61d0f2f90063] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-06 15:08:53.593 [http-nio-8082-exec-2] INFO  [61d0f2f90063] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-06 15:08:53.661 [http-nio-8082-exec-2] INFO  [61d0f2f90063] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@df3ac54
+2026-05-06 15:08:53.661 [http-nio-8082-exec-2] INFO  [61d0f2f90063] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-06 15:08:53.674 [http-nio-8082-exec-2] INFO  [61d0f2f90063] e.o.c.service.ChatSessionService - Not a valid chat history
+2026-05-06 15:08:53.678 [http-nio-8082-exec-2] INFO  [61d0f2f90063] e.o.c.service.ChatSessionService - Rate chat answer: [{"answer":"A bird is a type of animal that belongs to the class Aves. Birds have several distinguishing features. They have feathers, which help them fly, insulate their bodies, and regulate their body temperature. Birds also have beaks instead of teeth, and their skeletons are lightweight and highly adaptable. Birds are found all over the world, and they come in a wide variety of sizes, shapes, and colors. Some birds are solitary and live in isolated areas, while others live in large flocks and can be found in a wide range of habitats, including forests, grasslands, deserts, wetlands, and coastal areas. Birds play an important role in many ecosystems, and they are an important source of food for many people around the world.","question":"what is bird","response_date":"2026-04-20T19:30:26.587504+09:30","response_time":"6834ms","document_reference_id":""}]
+2026-05-06 15:08:53.686 [http-nio-8082-exec-2] INFO  [61d0f2f90063] e.o.s.filter.RequestLoggingFilter - [61d0f2f90063] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 132ms
+2026-05-06 15:09:21.635 [http-nio-8082-exec-3] INFO  [839cde189910] e.o.c.service.ChatSessionService - Rate chat answer: [{"answer":"A bird is a type of animal that belongs to the class Aves. Birds have several distinguishing features. They have feathers, which help them fly, insulate their bodies, and regulate their body temperature. Birds also have beaks instead of teeth, and their skeletons are lightweight and highly adaptable. Birds are found all over the world, and they come in a wide variety of sizes, shapes, and colors. Some birds are solitary and live in isolated areas, while others live in large flocks and can be found in a wide range of habitats, including forests, grasslands, deserts, wetlands, and coastal areas. Birds play an important role in many ecosystems, and they are an important source of food for many people around the world.","answerId":"99306983-e5a0-4d97-a2a9-5e30111aac24","question":"what is bird","response_date":"2026-04-20T19:30:26.587504+09:30","response_time":"6834ms","document_reference_id":"","rating":5}]
+2026-05-06 15:09:21.640 [http-nio-8082-exec-3] INFO  [839cde189910] e.o.s.filter.RequestLoggingFilter - [839cde189910] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 16ms
+2026-05-06 15:09:51.161 [MessageBroker-1] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-06 15:15:25.080 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06 15:15:25.089 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-06 15:15:25.090 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-05-06 15:15:25.090 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5fd4e67f]]
+2026-05-06 15:15:25.090 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-05-06 15:15:25.092 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-06 15:15:25.093 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-06 15:15:26.638 [main] INFO  [] e.o.c.ChatServiceApplication - Starting ChatServiceApplication using Java 21.0.7 with PID 33123 (/Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service/build/classes/java/main started by matchattatoyaem in /Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service)
+2026-05-06 15:15:26.639 [main] INFO  [] e.o.c.ChatServiceApplication - The following 1 profile is active: "local"
+2026-05-06 15:15:27.023 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-06 15:15:27.027 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:15:27.027 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-06 15:15:27.027 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-05-06 15:15:27.040 [main] INFO  [] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 385 ms
+2026-05-06 15:15:27.086 [main] INFO  [] n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2026-05-06 15:15:28.081 [main] INFO  [] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-06 15:15:28.171 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-05-06 15:15:28.172 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1f72fbd1]]
+2026-05-06 15:15:28.172 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-05-06 15:15:28.172 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:15:28.175 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-06 15:15:28.178 [main] INFO  [] e.o.c.ChatServiceApplication - Started ChatServiceApplication in 1.7 seconds (process running for 1.908)
+2026-05-06 15:16:28.175 [MessageBroker-1] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-06 15:17:10.659 [http-nio-8082-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06 15:17:10.659 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-06 15:17:10.660 [http-nio-8082-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-06 15:17:10.666 [http-nio-8082-exec-1] WARN  [c78917e743ef] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-06 15:17:10.700 [http-nio-8082-exec-1] INFO  [c78917e743ef] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-06 15:17:10.759 [http-nio-8082-exec-1] INFO  [c78917e743ef] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3aec8e46
+2026-05-06 15:17:10.760 [http-nio-8082-exec-1] INFO  [c78917e743ef] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-06 15:17:10.783 [http-nio-8082-exec-1] INFO  [c78917e743ef] e.o.s.filter.RequestLoggingFilter - [c78917e743ef] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 122ms
+2026-05-06 15:17:10.783 [http-nio-8082-exec-1] ERROR [] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [UPDATE chat_sessions SET chat_history = ? WHERE id = ?]] with root cause
+org.postgresql.util.PSQLException: ERROR: column "chat_history" is of type jsonb but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 41
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2875)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2560)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$0(JdbcTemplate.java:971)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:966)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1010)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1020)
+	at edu.oconnor.chatservice.repository.ChatSessionRepository.updateChatHistory(ChatSessionRepository.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at edu.oconnor.chatservice.repository.ChatSessionRepository$$SpringCGLIB$$0.updateChatHistory(<generated>)
+	at edu.oconnor.chatservice.service.ChatSessionService.rateChatAnswer(ChatSessionService.java:81)
+	at edu.oconnor.chatservice.controller.ChatSessionController.rateAnswer(ChatSessionController.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at edu.oconnor.sharedsecurity.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-06 15:18:01.469 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06 15:18:01.473 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-06 15:18:01.473 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-05-06 15:18:01.473 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1f72fbd1]]
+2026-05-06 15:18:01.473 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-05-06 15:18:01.475 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-06 15:18:01.476 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-06 15:18:03.199 [main] INFO  [] e.o.c.ChatServiceApplication - Starting ChatServiceApplication using Java 21.0.7 with PID 39781 (/Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service/build/classes/java/main started by matchattatoyaem in /Users/matchattatoyaem/Adelaide Lecture/capstone-project/ai-platform/chat-service)
+2026-05-06 15:18:03.200 [main] INFO  [] e.o.c.ChatServiceApplication - The following 1 profile is active: "local"
+2026-05-06 15:18:03.621 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-05-06 15:18:03.625 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:18:03.625 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-06 15:18:03.625 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-05-06 15:18:03.641 [main] INFO  [] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 422 ms
+2026-05-06 15:18:03.691 [main] INFO  [] n.d.b.g.c.a.GrpcClientAutoConfiguration - Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2026-05-06 15:18:04.635 [main] INFO  [] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-06 15:18:04.736 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+2026-05-06 15:18:04.736 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@36453773]]
+2026-05-06 15:18:04.736 [main] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+2026-05-06 15:18:04.736 [main] INFO  [] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-05-06 15:18:04.740 [main] INFO  [] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-05-06 15:18:04.743 [main] INFO  [] e.o.c.ChatServiceApplication - Started ChatServiceApplication in 1.705 seconds (process running for 1.958)
+2026-05-06 15:18:07.414 [http-nio-8082-exec-2] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06 15:18:07.414 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-06 15:18:07.415 [http-nio-8082-exec-2] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-06 15:18:07.419 [http-nio-8082-exec-2] WARN  [f85fc96e00e5] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-06 15:18:07.448 [http-nio-8082-exec-2] INFO  [f85fc96e00e5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-06 15:18:07.513 [http-nio-8082-exec-2] INFO  [f85fc96e00e5] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@424f89f1
+2026-05-06 15:18:07.514 [http-nio-8082-exec-2] INFO  [f85fc96e00e5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-06 15:18:07.555 [http-nio-8082-exec-2] INFO  [f85fc96e00e5] e.o.s.filter.RequestLoggingFilter - [f85fc96e00e5] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 138ms
+2026-05-06 15:18:17.792 [http-nio-8082-exec-3] INFO  [8cc249536853] e.o.s.filter.RequestLoggingFilter - [8cc249536853] PUT /api/chat-sessions/a702516e-c8ad-4b66-8fff-7766c5e26862/answer-rating | status=200 | ip=0:0:0:0:0:0:0:1 | user=anonymous | 8ms
+2026-05-06 15:19:04.737 [MessageBroker-1] INFO  [] o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-05-06 15:43:35.023 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m27s395ms).
+2026-05-06 16:52:20.073 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m45s51ms).
+2026-05-06 18:10:14.219 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m54s146ms).
+2026-05-06 19:22:30.320 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m16s100ms).
+2026-05-06 20:10:52.505 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m22s186ms).
+2026-05-06 20:23:34.983 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m42s477ms).
+2026-05-06 21:24:28.230 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h53s248ms).
+2026-05-06 22:20:31.361 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m3s131ms).
+2026-05-06 22:48:27.499 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m56s138ms).
+2026-05-06 22:52:35.191 [HikariPool-1:housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m7s691ms).
+2026-05-06 22:53:07.189 [SpringApplicationShutdownHook] INFO  [] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06 22:53:07.197 [tomcat-shutdown] INFO  [] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-06 22:53:07.199 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+2026-05-06 22:53:07.199 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@36453773]]
+2026-05-06 22:53:07.199 [SpringApplicationShutdownHook] INFO  [] o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+2026-05-06 22:53:07.202 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-06 22:53:07.204 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

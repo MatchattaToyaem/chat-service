@@ -1,5 +1,6 @@
 package edu.oconnor.chatservice.controller;
 
+import edu.oconnor.chatservice.model.AnswerRatingRequest;
 import edu.oconnor.chatservice.model.ChatSession;
 import edu.oconnor.chatservice.model.ChatSessionRequest;
 import edu.oconnor.chatservice.service.ChatSessionService;
@@ -58,5 +59,13 @@ public class ChatSessionController {
         return deleted
                 ? ResponseEntity.noContent().build()
                 : ResponseEntity.notFound().build();
+    }
+
+    @PutMapping("/{id}/answer-rating")
+    public ResponseEntity<ChatSession> rateAnswer (@PathVariable UUID id, @RequestBody
+    AnswerRatingRequest request) {
+        return chatSessionService.rateChatAnswer(id, request)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 }

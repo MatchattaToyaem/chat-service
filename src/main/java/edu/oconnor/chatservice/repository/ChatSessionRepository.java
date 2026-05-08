@@ -68,6 +68,10 @@ public class ChatSessionRepository {
         return findById(id).orElseThrow();
     }
 
+    public Optional<ChatSession> updateChatHistory(UUID id, String chatHistory) {
+        int rows = jdbcTemplate.update("UPDATE chat_sessions SET chat_history = ?::jsonb WHERE id = ?", chatHistory, id);
+        return rows > 0 ? findById(id) : Optional.empty();
+    }
     public Optional<ChatSession> update(UUID id, ChatSessionRequest request) {
         String chatHistory = request.getChatHistory() != null ? request.getChatHistory() : "[]";
         String status = request.getStatus() != null ? request.getStatus() : "active";
