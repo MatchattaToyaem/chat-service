@@ -49,10 +49,10 @@ public class ChatController {
             dto.setDocumentPath(sharepointBaseFolder + "/" + s.getFile());
             return dto;
         }).toList();
-
+        UUID answerId = UUID.randomUUID();
         if (messageRequest.getSessionId() != null && !messageRequest.getSessionId().isBlank()) {
             ChatHistoryEntry entry = new ChatHistoryEntry();
-            entry.setAnswerId(UUID.randomUUID().toString());
+            entry.setAnswerId(answerId.toString());
             entry.setQuestion(messageRequest.getMessage());
             entry.setAnswer(reply.getResult());
             entry.setConfidence(reply.getConfidence());
@@ -64,6 +64,7 @@ public class ChatController {
         }
 
         MessageResponse response = new MessageResponse();
+        response.setAnswerId(answerId.toString());
         response.setSender(reply.getModel().isBlank() ? "AI" : reply.getModel());
         response.setMessage(reply.getResult());
         response.setConfidence(reply.getConfidence());
