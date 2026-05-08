@@ -61,7 +61,7 @@ public class ChatSessionController {
                 : ResponseEntity.notFound().build();
     }
 
-    @PutMapping("/{id}/answer-rating")
+    @PutMapping("/answer-rating/{id}")
     public ResponseEntity<ChatSession> rateAnswer (@PathVariable UUID id, @RequestBody
     AnswerRatingRequest request) {
         return chatSessionService.rateChatAnswer(id, request)
