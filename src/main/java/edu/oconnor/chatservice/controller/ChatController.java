@@ -37,7 +37,7 @@ public class ChatController {
     @SendToUser("/queue/message")
     public MessageResponse sendMessage(@Payload MessageRequest messageRequest) {
         long start = System.currentTimeMillis();
-        InferenceReply reply = chatbotService.askChatbot(messageRequest.getMessage());
+        InferenceReply reply = chatbotService.askChatbot(messageRequest.getMessage(), messageRequest.getSessionId());
         long responseTimeMs = System.currentTimeMillis() - start;
 
         List<SourceDto> sources = reply.getSourcesList().stream().map(s -> {

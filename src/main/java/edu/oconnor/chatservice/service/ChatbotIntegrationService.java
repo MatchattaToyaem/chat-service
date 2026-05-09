@@ -12,10 +12,11 @@ public class ChatbotIntegrationService {
     @GrpcClient("chatbot-server")
     private HuggingFaceServiceGrpc.HuggingFaceServiceBlockingStub huggingFaceStub;
 
-    public InferenceReply askChatbot(String userText) {
-        PromptRequest request = PromptRequest.newBuilder()
-                .setPrompt(userText)
-                .build();
-        return huggingFaceStub.generateResponse(request);
+    public InferenceReply askChatbot(String userText, String sessionId) {
+        PromptRequest.Builder builder = PromptRequest.newBuilder().setPrompt(userText);
+        if (sessionId != null && !sessionId.isBlank()) {
+            builder.setSessionId(sessionId);
+        }
+        return huggingFaceStub.generateResponse(builder.build());
     }
 }
