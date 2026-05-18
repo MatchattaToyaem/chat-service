@@ -46,7 +46,11 @@ public class ChatController {
             dto.setSubfolder(s.getSubfolder());
             dto.setScore(s.getScore());
             dto.setChunkId(s.getChunkId());
-            dto.setDocumentPath(sharepointBaseFolder + "/" + s.getFile());
+            if(s.getFile().split("/").length > 1 &&s.getFile().split("/")[0].equals("Service")) {
+                dto.setDocumentPath(s.getFile());
+            }else{
+                dto.setDocumentPath(sharepointBaseFolder + "/" + s.getFile());
+            }
             return dto;
         }).toList();
         UUID answerId = UUID.randomUUID();
